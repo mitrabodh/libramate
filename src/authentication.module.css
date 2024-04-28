@@ -8,12 +8,15 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     background-color: rgb(16, 16, 16);
+    overflow: hidden;
+
 }
 
 form {
@@ -27,7 +30,6 @@ form {
     background-color: rgb(18, 14, 41);
     height: 50%;
     border-radius: 5px;
-    z-index: 999;
 }
 
 input {
@@ -63,6 +65,7 @@ span {
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1),
         0 0 20px rgba(255, 255, 255, 1);
     animation: animate 3s linear infinite;
+    z-index: 999;
 }
 
 span::before {
@@ -163,3 +166,5 @@ span:nth-child(9) {
         opacity: 0;
     }
 }
+
+@media screen and (min-width: 300px) {}
