@@ -13,6 +13,15 @@ export default function LoginPage() {
             <span></span>
             <span></span>
             <span></span>
+            <div className={styles.subContainer}>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <form action="" className={styles.form}>
                 <p>Login!</p>
                 <input type="text" placeholder="Username or Email" name="id" id="" />
