@@ -14,7 +14,7 @@ export default function LoginPage() {
             <span></span>
             <span></span>
             <form action="" className={styles.form}>
-                <p>Login</p>
+                <p>Login!</p>
                 <input type="text" placeholder="Username or Email" name="id" id="" />
                 <input type="password" placeholder="Password" name="password" id="" />
                 <input type="submit" value="login" />
