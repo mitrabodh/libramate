@@ -20,6 +20,8 @@ body {
 }
 
 form {
+    position: absolute;
+    top: 25vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
