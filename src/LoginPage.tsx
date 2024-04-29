@@ -23,7 +23,7 @@ export default function LoginPage() {
             <span></span>
             <span></span>
             <span></span>
-            <div className={styles.subContainer}>
+            <div className={styles.starBox}>
                 <div></div>
                 <div></div>
                 <div></div>
