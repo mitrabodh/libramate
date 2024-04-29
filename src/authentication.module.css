@@ -79,6 +79,7 @@ form {
     width: 500px;
     max-width: 90%;
     height: 50%;
+    min-height: 400px;
     justify-content: center;
     align-items: center;
     background-color: rgb(18, 14, 41);
@@ -89,7 +90,7 @@ form {
 input {
     width: 250px;
     max-width: 95%;
-    height: 20px;
+    min-height: 30px;
     outline: none;
     padding: 5px;
     border-radius: 3px;
@@ -100,6 +101,7 @@ input[type="submit"] {
     height: 30px;
     color: white;
     background-color: rgb(67, 100, 209);
+    font-size: 15px;
 }
 
 input[type="submit"]:hover {
@@ -116,7 +118,7 @@ input[type="checkbox"]::before {
     position: absolute;
     min-width: 100px;
     content: "Show Password";
-    top: 15%;
+    top: 25%;
     left: 100%;
     color: white;
 }
