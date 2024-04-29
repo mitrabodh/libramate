@@ -92,13 +92,16 @@ input {
     padding: 5px;
     border-radius: 3px;
     border: none;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
 input[type="submit"] {
     height: 30px;
     color: white;
     background-color: rgb(67, 100, 209);
-    font-size: 15px;
+    font-size: 20px;
+    padding-top: 1px;
 }
 
 input[type="submit"]:hover {
@@ -113,11 +116,12 @@ input[type="checkbox"] {
 
 input[type="checkbox"]::before {
     position: absolute;
-    min-width: 100px;
+    min-width: 200px;
     content: "Show password";
     top: 25%;
     left: 100%;
     color: white;
+    font-size: 15px;
 }
 
 p {
