@@ -4,16 +4,7 @@ import { useState } from 'react';
 
 export default function CreateAccount() {
     const [agree, setAgree] = useState<Boolean>(false);
-    let leftPos: number | undefined;
-    let formWidth: number | undefined = document.querySelector("form")?.clientWidth;
-    function containerWidth() {
-        let pos: number;
-        if (formWidth !== undefined && Number(formWidth) < 500) {
-            return pos = 125 - (500 - Number(formWidth));
-        }
-    }
 
-    leftPos = containerWidth();
 
     return (
         <div className={styles.container}>
@@ -37,7 +28,7 @@ export default function CreateAccount() {
             </div>
             <form action="" style={{ minHeight: "550px" }}>
                 <p>Create a new account!</p>
-                <label htmlFor="username" style={{ color: 'white', left: `${leftPos}px` }}>Username:</label>
+                <label htmlFor="username" style={{ color: 'white' }}>Username:</label>
                 <input type="text" placeholder="" name="username" id="username" />
                 <label htmlFor="email" style={{ color: 'white' }}>Email:</label>
                 <input type="email" name="email" id="email" />
