@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import styles from "./authentication.module.css"
 import useCheckbox from '../utils/Checkbox'
+import { Link } from "react-router-dom"
+
 
 export default function LoginPage() {
     const { inputRef, showPass } = useCheckbox();
@@ -30,7 +32,8 @@ export default function LoginPage() {
                 <input type="text" placeholder="Username or Email" name="id" id="" />
                 <input ref={inputRef} type="password" placeholder="Password" name="password" id="password" />
                 <input type="checkbox" onClick={showPass} name="" id="" />
-                <input type="submit" value="login" />
+                <input disabled type="submit" value="login" />
+                <p><Link to="/create-account">Create a new account</Link></p>
             </form>
         </div >
     )

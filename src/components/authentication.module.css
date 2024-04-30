@@ -93,6 +93,7 @@ form.acc>* {
     margin-left: 25%;
 }
 
+
 form.acc>label {
     margin-bottom: -15px;
 }
@@ -121,6 +122,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: black;
+    cursor: pointer;
 }
 
 input[type="checkbox"] {
@@ -159,6 +161,18 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: large;
+}
+
+/* All fields are required statement on the create account page */
+h5 {
+    color: #fff;
+    margin-top: -20px;
+    font-weight: 600;
+}
+
+p,
+a {
+    color: #fff;
 }
 
 /* Shooting stars */
@@ -289,4 +303,10 @@ span:nth-child(9) {
         margin-left: 15%;
     }
 
+}
+
+@media screen and (min-width:800px) {
+    form.acc {
+        right: 5%;
+    }
 }
