@@ -1,10 +1,11 @@
 import React from 'react';
-import LoginPage from "./LoginPage"
+import LoginPage from "./components/LoginPage"
+import CreateAccount from './components/CreateAccount';
 
 function App() {
   return (
     <div>
-      <LoginPage />
+      <CreateAccount />
     </div>
   );
 }

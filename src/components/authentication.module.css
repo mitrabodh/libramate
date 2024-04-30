@@ -93,15 +93,24 @@ input {
     border-radius: 3px;
     border: none;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/* Label for Create account page */
+
+label {
+    align-self: flex-start;
+    position: relative;
+    left: 125px;
+}
+
+/* Style for submit button */
 input[type="submit"] {
     height: 30px;
     color: white;
     background-color: rgb(67, 100, 209);
     font-size: 20px;
-    padding-top: 1px;
+    padding-top: 2px;
 }
 
 input[type="submit"]:hover {

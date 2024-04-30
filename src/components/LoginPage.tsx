@@ -32,7 +32,7 @@ export default function LoginPage() {
                 <div></div>
                 <div></div>
             </div>
-            <form action="" className={styles.form}>
+            <form action="" >
                 <p>Welcome back!</p>
                 <input type="text" placeholder="Username or Email" name="id" id="" />
                 <input ref={inputRef} type="password" placeholder="Password" name="password" id="password" />
