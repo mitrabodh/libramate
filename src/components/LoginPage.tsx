@@ -26,7 +26,7 @@ export default function LoginPage() {
                 <div></div>
             </div>
             <form action="" >
-                <p>Welcome back!</p>
+                <h1>Welcome back!</h1>
                 <input type="text" placeholder="Username or Email" name="id" id="" />
                 <input ref={inputRef} type="password" placeholder="Password" name="password" id="password" />
                 <input type="checkbox" onClick={showPass} name="" id="" />

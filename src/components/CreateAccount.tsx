@@ -26,8 +26,8 @@ export default function CreateAccount() {
                 <div></div>
                 <div></div>
             </div>
-            <form action="" style={{ minHeight: "550px" }}>
-                <p>Create a new account!</p>
+            <form action="" className={styles.acc} style={{ minHeight: "550px", alignItems: 'flex-start' }}>
+                <h1>Create a new account!</h1>
                 <label htmlFor="username" style={{ color: 'white' }}>Username:</label>
                 <input type="text" placeholder="" name="username" id="username" />
                 <label htmlFor="email" style={{ color: 'white' }}>Email:</label>

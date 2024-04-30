@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-
+/* Form conatainer */
 .container {
     position: relative;
     display: flex;
@@ -15,6 +15,8 @@
     overflow-x: hidden;
     overflow-y: scroll;
 }
+
+/* Background stars */
 
 .starBox>div {
     position: absolute;
@@ -67,6 +69,7 @@
     transform: scale(0.3);
 }
 
+/* Form */
 form {
     position: absolute;
     top: 15vh;
@@ -84,6 +87,13 @@ form {
     border-radius: 5px;
 }
 
+/* Style for create account page */
+
+form.acc>* {
+    margin-left: 25%;
+}
+
+/* Input fields */
 input {
     width: 250px;
     max-width: 95%;
@@ -96,15 +106,6 @@ input {
     font-size: 18px;
 }
 
-/* Label for Create account page */
-
-label {
-    align-self: flex-start;
-    position: relative;
-    left: 125px;
-}
-
-/* Style for submit button */
 input[type="submit"] {
     height: 30px;
     color: white;
@@ -124,6 +125,11 @@ input[type="checkbox"] {
     max-width: 15px;
 }
 
+/* Checkbox for create account */
+input[type="checkbox"].account {
+    left: 0px;
+}
+
 input[type="checkbox"]::before {
     position: absolute;
     min-width: 200px;
@@ -139,22 +145,19 @@ input[type="checkbox"].account::before {
     position: absolute;
     min-width: 200px;
     content: "By checking this box, you are agreeing to our terms and conditions.";
-    top: 25%;
-    left: 100%;
     color: white;
     font-size: 12px;
 }
 
-p {
+/* Form heading */
+h1 {
     color: white;
     margin: 0;
     padding: 0;
     font-size: large;
 }
 
-
-
-
+/* Shooting stars */
 span {
     position: absolute;
     top: 50%;
@@ -252,6 +255,7 @@ span:nth-child(9) {
 }
 
 
+/* Shooting stars animation */
 @keyframes animate {
     0% {
         transform: rotate(315deg) translateX(0);
@@ -265,5 +269,15 @@ span:nth-child(9) {
     100% {
         transform: rotate(315deg) translateX(-1000px);
         opacity: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    form.acc>input[ type="text"],
+    form.acc>input[ type="email"],
+    form.acc>input[ type="password"],
+    form.acc>input[ type="submit"] {
+        max-width: 70%;
     }
 }
