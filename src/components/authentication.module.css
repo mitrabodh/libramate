@@ -93,6 +93,10 @@ form.acc>* {
     margin-left: 25%;
 }
 
+form.acc>label {
+    margin-bottom: -15px;
+}
+
 /* Input fields */
 input {
     width: 250px;
@@ -267,7 +271,7 @@ span:nth-child(9) {
     }
 
     100% {
-        transform: rotate(315deg) translateX(-1000px);
+        transform: rotate(315deg) translateX(-400px);
         opacity: 0;
     }
 }
