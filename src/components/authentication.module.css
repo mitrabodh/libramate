@@ -280,4 +280,9 @@ span:nth-child(9) {
     form.acc>input[ type="submit"] {
         max-width: 70%;
     }
+
+    form.acc>* {
+        margin-left: 15%;
+    }
+
 }
