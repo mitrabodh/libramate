@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import styles from "./authentication.module.css"
-
+import { useState } from 'react';
 
 export default function CreateAccount() {
+    const [agree, setAgree] = useState<Boolean>(false);
     let leftPos: number | undefined;
     let formWidth: number | undefined = document.querySelector("form")?.clientWidth;
     function containerWidth() {
@@ -34,7 +35,7 @@ export default function CreateAccount() {
                 <div></div>
                 <div></div>
             </div>
-            <form action="" style={{ minHeight: "500px" }}>
+            <form action="" style={{ minHeight: "550px" }}>
                 <p>Create a new account!</p>
                 <label htmlFor="username" style={{ color: 'white', left: `${leftPos}px` }}>Username:</label>
                 <input type="text" placeholder="" name="username" id="username" />
@@ -44,6 +45,7 @@ export default function CreateAccount() {
                 <input type="password" placeholder="" name="password1" id="password1" />
                 <label htmlFor="password2" style={{ color: 'white' }}>Confirm password:</label>
                 <input type="password" placeholder="" name="password2" id="password2" />
+                <input className={styles.account} type="checkbox" onClick={() => setAgree(true)} name="" id="" />
                 <input type="submit" value="Create account" />
             </form>
         </div >

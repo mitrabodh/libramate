@@ -1,17 +1,10 @@
 import React, { useRef } from 'react'
 import styles from "./authentication.module.css"
-
+import useCheckbox from '../utils/Checkbox'
 
 export default function LoginPage() {
-    const inputRef = useRef<HTMLInputElement | null>(null);
-    function showPass() {
-        let el = inputRef.current;
-        if (el?.type === "password") {
-            el.type = "text";
-        } else if (el !== null) {
-            el.type = "password";
-        }
-    }
+    const { inputRef, showPass } = useCheckbox();
+
     return (
         <div className={styles.container}>
             <span></span>

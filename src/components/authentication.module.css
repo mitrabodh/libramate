@@ -110,8 +110,9 @@ input[type="submit"] {
     color: white;
     background-color: rgb(67, 100, 209);
     font-size: 20px;
-    padding-top: 2px;
+    padding-top: 3.5px;
 }
+
 
 input[type="submit"]:hover {
     background-color: black;
@@ -131,6 +132,17 @@ input[type="checkbox"]::before {
     left: 100%;
     color: white;
     font-size: 15px;
+}
+
+/* Checkbox for create account page */
+input[type="checkbox"].account::before {
+    position: absolute;
+    min-width: 200px;
+    content: "By checking this box, you are agreeing to our terms and conditions.";
+    top: 25%;
+    left: 100%;
+    color: white;
+    font-size: 12px;
 }
 
 p {
