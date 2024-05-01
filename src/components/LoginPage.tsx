@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import styles from "./authentication.module.css"
-import useCheckbox from '../utils/Checkbox'
+import useCheckbox from '../hooks/Checkbox'
 import { Link } from "react-router-dom"
 
 
