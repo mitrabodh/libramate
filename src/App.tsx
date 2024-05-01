@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginPage from "./components/LoginPage"
-import CreateAccount from './components/CreateAccount';
+import CreateAccount from './components/CreateAccountPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
