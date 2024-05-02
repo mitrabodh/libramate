@@ -1,0 +1,23 @@
+.inputDiv {
+    position: relative;
+    min-height: 30px;
+}
+
+
+.inputDiv input {
+    padding-left: 25px;
+}
+
+.icon {
+    display: inline-block;
+    min-height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+.eye {
+    left: 83%;
+    cursor: pointer;
+}
