@@ -77,7 +77,7 @@
 /* Form */
 form {
     position: absolute;
-    top: 15vh;
+    top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -95,6 +95,7 @@ form {
 
 form.acc>* {
     margin-left: 25%;
+
 }
 
 
@@ -115,6 +116,30 @@ input {
     font-size: 14px;
 }
 
+.inputDiv input {
+    padding-left: 25px;
+}
+
+.icon {
+    display: inline-block;
+    min-height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+.eye {
+    left: 83%;
+    cursor: pointer;
+}
+
+.inputDiv {
+    position: relative;
+    min-height: 30px;
+}
+
+
 
 input[type="submit"] {
     height: 30px;
@@ -126,8 +151,8 @@ input[type="submit"] {
 }
 
 input[type="submit"].acc {
-    align-self: center;
-    margin-left: 0px;
+    align-self: flex-start;
+    max-width: 240px;
 }
 
 
@@ -172,6 +197,11 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: large;
+}
+
+/* Create account form heading */
+form.acc h1 {
+    margin-top: -25%;
 }
 
 /* All fields are required statement on the create account page */
@@ -306,13 +336,19 @@ span:nth-child(9) {
 
     form.acc>input[ type="text"],
     form.acc>input[ type="email"],
-    form.acc>input[ type="password"],
-    form.acc>input[ type="submit"] {
+    form.acc>input[ type="password"] {
         max-width: 70%;
     }
 
     form.acc>* {
-        margin-left: 15%;
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    form.acc>* {
+        margin-left: 13%;
     }
 
 }

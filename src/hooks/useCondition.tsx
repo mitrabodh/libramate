@@ -1,4 +1,3 @@
-import React from 'react'
 import { useRef } from 'react'
 
 export default function useCondition() {
@@ -10,8 +9,6 @@ export default function useCondition() {
         } else if (el?.type === "text" && show === false) {
             el.type = "password";
         }
-
-
     }
     return { inputRef, showPass };
 

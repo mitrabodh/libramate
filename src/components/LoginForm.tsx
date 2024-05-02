@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
-import styles from "./login.module.css"
+import styles from "./authentication.module.css"
 import { FaRegUser } from "react-icons/fa";
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
