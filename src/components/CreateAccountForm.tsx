@@ -103,7 +103,7 @@ export default function CreateAccountForm() {
                     },
                     pattern: {
                         value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).+$/,
-                        message: "Pasword must contain at least a digit, a small letter and a capital letter.",
+                        message: "Password must contain at least a digit, a small letter and a capital letter.",
                     },
 
                 })} aria-invalid={errors.password ? true : false} />
