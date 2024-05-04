@@ -1,15 +1,14 @@
 import { useRef } from 'react'
 
-export default function useCondition() {
-    const inputRef = useRef<HTMLInputElement | null>(null);
+export default function useCondition(input: HTMLElement | null) {
+
     const showPass = function showPass(show: boolean) {
-        let el = inputRef.current;
-        if (el?.type === "password" && show === true) {
-            el.type = "text";
-        } else if (el?.type === "text" && show === false) {
-            el.type = "password";
+        if (input?.getAttribute("type") === "password" && show === true) {
+            input.setAttribute("type", "text")
+        } else if (input?.getAttribute("type") === "text" && show === false) {
+            input.setAttribute("type", "password");
         }
     }
-    return { inputRef, showPass };
+    return { showPass };
 
 }

@@ -6,7 +6,6 @@ import { FaRegUser } from "react-icons/fa";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
 import { useState } from 'react';
-import { error } from 'console';
 
 
 export default function CreateAccountForm() {
@@ -35,8 +34,8 @@ export default function CreateAccountForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} action="" className={styles.acc} style={{ minHeight: "550px", alignItems: 'flex-start' }}>
-            <h1>Create a new account!</h1>
+        <form onSubmit={handleSubmit(onSubmit)} className={styles.acc}>
+            <h1 className={errors ? `${styles.marginTopincr}` : ``}>Create a new account!</h1>
             <h5>All fields are required.</h5>
 
             {/* Username */}
@@ -122,13 +121,13 @@ export default function CreateAccountForm() {
                 })} aria-invalid={errors.passwordConf ? true : false} />
                 <p className={styles.inputErr}>{errors.passwordConf?.message}</p>
             </div>
-            <input className={errors.agree ? `${styles.redBox} ${styles.agree}` : `${styles.agree}`} type="checkbox" onClick={() => setAgree(!agree)}  {...register("agree", {
+            <input title="By checking this box, you are agreeing to our terms and conditions." className={errors.agree ? `${styles.redBox}` : ``} type="checkbox" onClick={() => setAgree(!agree)}  {...register("agree", {
                 required: {
                     value: true,
                     message: "Please accept the terms and conditions to proceed."
                 }
-            })} />
-            <input className={errors.agree ? `${styles.acc} ${styles.disableButton}` : `${styles.acc}`} disabled={errors.agree ? true : false} type="submit" value="Create account" />
+            })} /><p className={errors.agree ? `${styles.condition} ${styles.error}` : `${styles.condition}`}>By checking this box, you are agreeing to our terms and conditions.</p>
+            <input className={styles.acc} disabled={errors.agree ? true : false} type="submit" value="Create account" />
             <p>Already have an account? <Link to="/login">Login</Link></p>
         </form>
     )

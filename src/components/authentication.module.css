@@ -1,5 +1,6 @@
 :root {
     --darkblue: rgb(16, 16, 16);
+    --buttonColor: rgb(67, 100, 209);
 }
 
 
@@ -98,15 +99,16 @@ form.acc>* {
 
 }
 
-form.acc {
-    min-height: 550px;
-    align-items: 'flex-start'
-}
-
 
 form.acc>label {
     margin-bottom: -15px;
 }
+
+form.acc {
+    min-height: 550px;
+    align-items: flex-start;
+}
+
 
 /* Input fields */
 input {
@@ -148,12 +150,10 @@ input {
     min-height: 30px;
 }
 
-
-
 input[type="submit"] {
     height: 30px;
     color: white;
-    background-color: rgb(67, 100, 209);
+    background-color: var(--buttonColor);
     font-size: 16px;
     padding-top: 3.5px;
     border-radius: 0px;
@@ -162,7 +162,9 @@ input[type="submit"] {
 input[type="submit"].acc {
     align-self: flex-start;
     max-width: 240px;
+    background-color: var(--buttonColor);
 }
+
 
 
 input[type="submit"]:hover {
@@ -172,45 +174,10 @@ input[type="submit"]:hover {
 
 input[type="checkbox"] {
     position: relative;
-    left: -120px;
     max-width: 15px;
 }
 
-/* Checkbox for create account */
-input[type="checkbox"].agree {
-    left: 0px;
 
-}
-
-/* Create account condition unchecked */
-input[type="checkbox"].agree.redBox::before {
-    color: red;
-}
-
-/* Create account submit button disabled */
-input[type="submit"].acc.disableButton {
-    background-color: gray;
-}
-
-/* Login checkbox */
-input[type="checkbox"]::before {
-    position: absolute;
-    min-width: 200px;
-    content: "Show password";
-    top: 25%;
-    left: 100%;
-    color: white;
-    font-size: 15px;
-}
-
-/* Checkbox for create account page */
-input[type="checkbox"].agree::before {
-    position: absolute;
-    min-width: 200px;
-    content: "By checking this box, you are agreeing to our terms and conditions.";
-    color: white;
-    font-size: 12px;
-}
 
 /* Form heading */
 h1 {
@@ -219,13 +186,6 @@ h1 {
     padding: 0;
     font-size: large;
     margin-left: -4%;
-}
-
-ul {
-    list-style: disc;
-    color: rgb(255, 255, 255);
-    font-size: 12px;
-    margin-left: 14%;
 }
 
 
@@ -240,6 +200,11 @@ form.acc h1 {
     margin-top: -15%;
 }
 
+/* Create account form heading top margin */
+form.acc h1.marginTopincr {
+    margin-top: -10%;
+}
+
 /* All fields are required statement on the create account page */
 h5 {
     color: #fff;
@@ -252,6 +217,19 @@ a {
     color: #fff;
     font-size: 14px;
 }
+
+p.condition {
+    position: relative;
+    top: -46px;
+    left: 23px;
+    max-width: 250px;
+    margin-bottom: -40px;
+}
+
+.error {
+    color: red;
+}
+
 
 /* Shooting stars */
 span {
