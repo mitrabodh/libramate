@@ -98,6 +98,11 @@ form.acc>* {
 
 }
 
+form.acc {
+    min-height: 550px;
+    align-items: 'flex-start'
+}
+
 
 form.acc>label {
     margin-bottom: -15px;
@@ -127,6 +132,10 @@ input {
     position: absolute;
     left: 1%;
     top: 10%;
+}
+
+.iconUp {
+    top: 5%;
 }
 
 .eye {
@@ -168,10 +177,22 @@ input[type="checkbox"] {
 }
 
 /* Checkbox for create account */
-input[type="checkbox"].account {
+input[type="checkbox"].agree {
     left: 0px;
+
 }
 
+/* Create account condition unchecked */
+input[type="checkbox"].agree.redBox::before {
+    color: red;
+}
+
+/* Create account submit button disabled */
+input[type="submit"].acc.disableButton {
+    background-color: gray;
+}
+
+/* Login checkbox */
 input[type="checkbox"]::before {
     position: absolute;
     min-width: 200px;
@@ -183,7 +204,7 @@ input[type="checkbox"]::before {
 }
 
 /* Checkbox for create account page */
-input[type="checkbox"].account::before {
+input[type="checkbox"].agree::before {
     position: absolute;
     min-width: 200px;
     content: "By checking this box, you are agreeing to our terms and conditions.";
@@ -197,11 +218,26 @@ h1 {
     margin: 0;
     padding: 0;
     font-size: large;
+    margin-left: -4%;
+}
+
+ul {
+    list-style: disc;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-left: 14%;
+}
+
+
+
+/* Input errors */
+.inputErr {
+    color: red;
 }
 
 /* Create account form heading */
 form.acc h1 {
-    margin-top: -25%;
+    margin-top: -15%;
 }
 
 /* All fields are required statement on the create account page */
