@@ -87,8 +87,9 @@ form {
     height: 50%;
     min-height: 350px;
     justify-content: center;
+    border-radius: 5%;
     align-items: center;
-    background-color: rgb(18, 14, 41);
+    background-image: linear-gradient(to bottom, rgb(25, 31, 87), rgb(68, 15, 4));
     height: 50%;
 }
 
