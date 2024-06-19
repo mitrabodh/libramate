@@ -38,7 +38,7 @@ export default function CreateAccountForm() {
             <h1 className={errors ? `${styles.marginTopincr}` : ``}>Create a new account!</h1>
             <h5>All fields are required.</h5>
 
-            {/* Username */}
+            {/* Username field */}
             <div className={styles.inputDiv}>
                 <div className={styles.icon}><FaRegUser color='gray' size={"20px"} /></div>
                 <input {...register("username", {
@@ -67,7 +67,7 @@ export default function CreateAccountForm() {
                 <p className={styles.inputErr}>{errors?.username?.message}</p>
             </div>
 
-            {/* Email */}
+            {/* Email field*/}
             <div className={styles.inputDiv}>
                 <div className={styles.icon}><MdOutlineMail color='gray' size={"20px"} /></div>
                 <input {...register("email", {
@@ -84,7 +84,7 @@ export default function CreateAccountForm() {
                 <p className={styles.inputErr}>{errors?.email?.message}</p>
             </div>
 
-            {/* Password */}
+            {/* Password field*/}
             <div className={styles.inputDiv}>
                 <div className={`${styles.icon} ${styles.iconUp}`}><RiLockPasswordLine color='gray' size={"20px"} /></div>
                 <input type="password" placeholder="Create a password"  {...register("password", {
@@ -109,7 +109,7 @@ export default function CreateAccountForm() {
                 <p className={styles.inputErr}>{errors?.password?.message}</p>
             </div>
 
-            {/* Confirm Password */}
+            {/* Confirm Password field*/}
             <div className={styles.inputDiv}>
                 <div className={styles.icon}><RiLockPasswordLine color='gray' size={"20px"} /></div>
                 <input type="password" placeholder="Confirm password"  {...register("passwordConf", {
