@@ -3,7 +3,7 @@ import { useState } from 'react'
 import styles from "./canvas.module.css"
 import { Stage, Layer, Rect, Circle, Text } from 'react-konva'
 
-
+//The component is in the process of building. It is aimed at developing a canvas for creating custom flowcharts and drawings.
 export default function Canvas() {
   let state = {
     isDragging: false,
