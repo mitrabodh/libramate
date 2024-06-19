@@ -11,18 +11,21 @@ import useCondition from '../../hooks/useCondition';
 
 export default function LoginForm() {
 
-    // Custom hook for hide/show password.
+    
     const [show, setShow] = useState(false);
     const input = document.getElementById("password");
+
+    //The useCondition custom hook is used to hide or show the password entered by the user.
     const { showPass } = useCondition(input);
     showPass(show);
 
-    // React-Hook-Form 
+    
     interface FormInput {
         title: string;
         password: string;
     }
 
+    //The useForm is a custom hook provided by the React-Hook-Form library to manage the form state and form submission process.
     const { register, formState, handleSubmit } = useForm<FormInput>({
         defaultValues: {
             title: "",
@@ -30,9 +33,10 @@ export default function LoginForm() {
         }
     });
 
-
+    //The 'errors' api helps manage the errors.
     const { errors } = formState;
 
+    //A handler to handle the form submission process.
     const onSubmit: SubmitHandler<FormInput> = (data) => {
         console.log(data);
         document.querySelector("form")?.reset();
