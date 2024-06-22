@@ -1,7 +1,7 @@
 Building a personal project which uses an HTML canvas library called Konva.js.
 Link to the current version of the app: https://libramate.vercel.app/
 
-## Development is in the process.
+## Development is in progress.
 The application is in the process of building.
 As of now, the login and create-account page is completed by utilizing the React-Hook-Form library to validate the input data.
 The React-Router-Dom library is used to implement routing.
